@@ -1,11 +1,11 @@
 * { box-sizing: border-box; }
 header, nav, main, footer { display: block; }
 
-body { background-color: #000066; 
-      background-image: url(background.jpg);
+body { background-color: #000066;
+      background-image: url(wareagle.jpg);
       color: #FFFFFF;
       font-family: Verdana, Arial, sans-serif;
-	  background-image: url(background.jpg);
+	  background-image: url(wareagle.jpg);
 }
 #wrapper { background-color: #EF8A31;
 
@@ -14,7 +14,7 @@ body { background-color: #000066;
 		   margin-left: auto;
            min-width: 900px;
 		   max-width: 1280px;
-		   box-shadow: 3px 3px 3px #666666; 
+		   box-shadow: 3px 3px 3px #666666;
 }
 
 header { background-color: #EF8A31;
@@ -24,10 +24,10 @@ header { background-color: #EF8A31;
 }
 h1 { padding-top: 45px;
     padding-left: 220px;
-	font-size: 3em; 
+	font-size: 3em;
 }
-nav { text-align: center; 
-     font-weight: bold; 
+nav { text-align: center;
+     font-weight: bold;
 	 font-size: 1.5em;
 	 padding-top: 10px;
 	 float: left;
@@ -38,7 +38,7 @@ nav a:link { color: #FFFFFF; }
 nav a:visited{ color: #3399FF; }
 nav a:hover { color: #000066; }
 nav ul { list-style-type: none;
-       padding-left: 0; 
+       padding-left: 0;
 }
 footer { background-color: #D2B48C;
        font-size: small;
@@ -66,7 +66,7 @@ h4 { background-color: #000066;
 }
 .floatleft { float: left;
              padding-right: 20px;
-			 padding-bottom: 20px; 
+			 padding-bottom: 20px;
 }
 img { padding-left: 10px;
      padding-right: 10px;
@@ -116,7 +116,7 @@ input, textarea { display: block; margin-bottom: 1em; }
 		  margin: 10px;
 		  font-size: 1.3em; 	}
 	nav li  { display: inline-block; }
-	nav a { padding: 1em; 
+	nav a { padding: 1em;
 	      width: 8em;
 		  font-weight: bold;
 		  border-style: none; }
@@ -129,7 +129,7 @@ input, textarea { display: block; margin-bottom: 1em; }
 }
 
 @media only screen and (max-width: 768px) {
-	header { background-image: url(javajammini.jpg); 
+	header { background-image: url(javajammini.jpg);
 			height: 128px; }
 	h1 { font-size: 2em;
 	     text-align: center;
@@ -144,7 +144,7 @@ input, textarea { display: block; margin-bottom: 1em; }
 	h2 { padding: 0.5em 0 0 0.5em;
 	    margin-right: 0.5em; }
 	.details { padding-left: 0; padding-right: 0; }
-	#heroroad, #heromugs, #heroguitar { background-image: none; height: auto; } 
+	#heroroad, #heromugs, #heroguitar { background-image: none; height: auto; }
 	.floatleft { padding-left: 0.5em; padding-right: 0.5em; }
 	#mobile { display: inline; }
 	#desktop { display: none; }
