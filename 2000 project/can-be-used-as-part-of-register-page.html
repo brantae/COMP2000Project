@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comment </title>
+	
+	
+</head>
+
+
+<script>
+function confirmFunct() {
+	confirm("Do you want to confirm?")
+}
+
+function rejectFunct() {
+	confirm("Do you want to reject?")
+}
+
+</script>
+
+<body>
+	<br/>
+	<h2>Comments</h2>
+	<hr>
+
+	<br/><p>All feilds are required, please make sure you filled all fields before submit it</p>
+	<br/>
+
+	<form method="post">
+
+	<label style="width:10%; float:left;">Name: </label> 
+	<input type="text" name="name" required="required" placeholder="your first and last name" data-errormessage="Name is Mandatory." style="width:50%;display:block;margin-top: 10px; " /> <br/>
+	
+	<label style="width:10%; float:left;">Email: </label> <input type="text" name="email" required="required" placeholder="123@123.com" data-errormessage="Name is Mandatory." style="width:50%;display:block" /> <br/>
+	
+	<label style="width:10%; float:left;">Message: </label> 
+	 <textarea name="message" id="message" 
+	   rows="4" cols="20"
+           required="required"  
+	   placeholder="Any suggestions?"
+	   data-errormessage="Comments are Mandatory."
+	   style="width:50%;display:block" /></textarea></br>
+
+
+
+
+ <input type="reset"  onClick="rejectFunct()"/> 
+ <input type="submit" onClick="handleSubmit()">
+ <input type="button" value = "Back" onclick="javascript:history.go(-1)" />
+
+
+    <script>
+      function handleSubmit()
+      {
+	var userName;
+	var userEmail;
+	var comments; 
+         userName = document.getElementById(name).innerHTML;
+         userEmail = document.getElementById(email).innerHTML;
+         comments = document.getElementById(comments).innerHTML;
+         
+         
+         document.write("Date: " + userName);
+         document.write("Email: " + userEmail);
+         document.write("Comments: " + comments);
+      }
+    </script>
+
+
+</form>
+</body>
+</html>
