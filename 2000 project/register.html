@@ -14,11 +14,11 @@
 
 <script>
 function confirmFunct() {
-	confirm("Do you want to confirm?")
+	confirm("Do you want to save the changes and register for Free Auburn Online Resources?")
 }
 
 function rejectFunct() {
-	confirm("Do you want to discard?")
+	confirm("Do you want to discard the changes?")
 }
 
 </script>	
@@ -42,8 +42,25 @@ function rejectFunct() {
 	   placeholder="Your major please"
 	   data-errormessage="Comments are Mandatory."
 	   style="width:50%;display:block" /></textarea></br>
-
-
+	
+	<label style="width:10%; float:left;">State: </label> 
+	 <select size=10 name="state" multiple="multiple" id="state">
+	   <option value="None selecteds" selected="selected">Select the year of schoole you currently at:</option>
+	   <option value="1st">Freshman</option>
+	   <option value="2nd">Sophomore</option>
+	   <option value="3rd">Junior</option>
+	   <option value="4th">Senior</option>
+	   <option value="Graduate">Graduate</option>
+	   <option value="thers">Others</option>
+	 </select>
+	<br/>
+	
+	<label style="width:10%; float:left;">Intro: </label> 
+	 <textarea name="intro" id="intro" 
+	   rows="2" cols="20"  
+	   placeholder="Use a few words to describe yourself!"
+	   data-errormessage="Comments are Mandatory."
+	   style="width:50%;display:block" /></textarea></br>
 
 
  <input type="reset"  onClick="rejectFunct()"/> 
