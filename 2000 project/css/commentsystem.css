@@ -1,0 +1,59 @@
+#respond {margin-top: 40px
+}
+#respond input[type='text'],
+#respond input[type='email'],
+#respond textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    line-height: 1.4em;
+}
+
+body{background-color: white; font-family:'Arial',sans-serif; font-size: 12px;}
+    h1 {
+    	border: 2px solid #000000; 
+    	color:black; 
+    	background-color: white; 
+    	text-align: center; 
+    	padding: 10px
+    }
+	form {
+		background-color: white; 
+		font-family: 'Arial', sans-serif; 
+		font-size: 12px; 
+		padding:10px;
+        margin-top: 10px;
+    }
+    input, textarea {
+        font: sans-serif;
+        margin-top: 10px;
+        width: 300px;
+        border: 1px solid #999; 
+        display:inline-block;
+    }
+    .comment {
+        vertical-align: top;
+        height: 30px;
+        clear:left;
+    }
+    .submit {
+        background-color: green; 
+        text-align: center;
+        clear: left;
+        float: center;
+        display: block;
+    }
+    .reset {
+        background-color: red; 
+        text-align: center;
+        clear: left;
+        float: center;
+        display: block;
+    }
+    input:required:invalid, textarea:required:invalid { /* when a field is considered invalid by the browser */
+        background: #fff;
+        box-shadow: 0 0 5px #d45252;
+        b
