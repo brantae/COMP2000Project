@@ -6,7 +6,51 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" cntent="width=device-width, initial-scale=1">
-	<title>Welcome</title>
+	<title>Register</title>
 	<link href="css/default.css" rel="stylesheet">
 	
 </head>
+
+
+<script>
+function confirmFunct() {
+	confirm("Do you want to confirm?")
+}
+
+function rejectFunct() {
+	confirm("Do you want to reject?")
+}
+
+</script>	
+
+	
+<body>
+	<br/><p>All feilds are required, please make sure you filled all fields before submit it</p>
+	<br/>
+
+	<form method="post">
+
+	<label style="width:10%; float:left;">Name: </label> 
+	<input type="text" name="name" required="required" placeholder="your first and last name" data-errormessage="Name is Mandatory." style="width:50%;display:block;margin-top: 10px; " /> <br/>
+	
+	<label style="width:10%; float:left;">Email: </label> <input type="text" name="email" required="required" placeholder="123@123.com" data-errormessage="Name is Mandatory." style="width:50%;display:block" /> <br/>
+	
+	<label style="width:10%; float:left;">Message: </label> 
+	 <textarea name="message" id="message" 
+	   rows="4" cols="20"
+           required="required"  
+	   placeholder="Any suggestions?"
+	   data-errormessage="Comments are Mandatory."
+	   style="width:50%;display:block" /></textarea></br>
+
+
+
+
+ <input type="reset"  onClick="rejectFunct()"/> 
+ <input type="submit" onClick="handleSubmit()">
+ <input type="button" value = "Back" onclick="javascript:history.go(-1)" />
+
+
+</form>
+</body>
+</html>
