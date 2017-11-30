@@ -6,7 +6,7 @@
   .logonav {
 	  float: left;
   }
-  
+
   .topnav a {
 	float: right;
 	display: block;
@@ -16,21 +16,37 @@
 	text-decoration: none;
 	font-size: 17px;
   }
-  
+
   .topnav a:hover {
 	background-color: orange;
 	color: black;
   }
-  
+
   .active {
 	background-color: orange;
 	color: white;
   }
-  
+
   .topnav .icon {
 	display: none;
   }
-  
+
+  footer {
+      padding: 1em;
+      color: white;
+      background-color: navy;
+      clear: left;
+      text-align: left;
+  }
+
+  #socialmedia {
+    text-align: center;
+    float: right;
+  }
+
+#sticky:hover {
+  background:black;
+}
   @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
@@ -38,7 +54,7 @@
 	  display: block;
 	}
   }
-  
+
   @media screen and (max-width: 600px) {
 	.topnav.responsive {position: relative;}
 	.topnav.responsive .icon {
@@ -51,5 +67,5 @@
 	  display: block;
 	  text-align: left;
 	}
-  
+
   }
