@@ -1,8 +1,8 @@
 function userLogin() {
-    var email = prompt("Please enter your Auburn University email address.", "name@auburn.edu");
-    if (email != null && email.includes("auburn")) {
+    var email = prompt("Please enter your Auburn University email address.");
+    if (email != null && email.includes("@auburn.edu")) {
         window.open('resources.html', '_self');
     } else {
-      alert("Invalid email adress.");
+      alert("Invalid email address.");
     }
 }
