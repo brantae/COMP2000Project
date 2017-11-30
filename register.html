@@ -8,7 +8,7 @@
 	<meta name="viewport" cntent="width=device-width, initial-scale=1">
 	<title>Register</title>
 	<link href="css/default.css" rel="stylesheet">
-	
+
 </head>
 
 
@@ -21,29 +21,41 @@ function rejectFunct() {
 	confirm("Do you want to discard the changes?")
 }
 
-</script>	
+</script>
 
-	
+
 <body>
+	<header>
+<div class="topnav" id="myTopnav">
+			<div class="logonav">
+				<a href="index.html">Auburn Online Resources</a>
+					<img src="img/AU-logo.png" alt="AU Logo" style="width:50px;height:42px;padding-left:5px;">
+				</div>
+			<a href="contactUs.html"	>Contact Us</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="index.html">Home</a>
+		  </div>
+</header>
+
 	<br/><p>All feilds are required, please make sure you filled all fields before submit it</p>
 	<br/>
 
 	<form method="post">
 
-	<label style="width:10%; float:left;">Name: </label> 
+	<label style="width:10%; float:left;">Name: </label>
 	<input type="text" name="name" required="required" placeholder="your first and last name" data-errormessage="Name is Mandatory." required pattern="[a-zA-Z]+[ ][a-zA-Z]+" style="width:50%;display:block;margin-top: 10px; " /> <br/>
-	
+
 	<label style="width:10%; float:left;">Email: </label> <input type="text" name="email" required="required" placeholder="123@123.com" data-errormessage="Name is Mandatory." style="width:50%;display:block" /> <br/>
-	
-	<label style="width:10%; float:left;">Major: </label> 
-	 <textarea name="message" id="message" 
+
+	<label style="width:10%; float:left;">Major: </label>
+	 <textarea name="message" id="message"
 	   rows="2" cols="20"
-           required="required"  
+           required="required"
 	   placeholder="Your major please"
 	   data-errormessage="Comments are Mandatory."
 	   style="width:50%;display:block" /></textarea></br>
-	
-	<label style="width:10%; float:left;">State: </label> 
+
+	<label style="width:10%; float:left;">State: </label>
 	 <select size=10 name="state" multiple="multiple" id="state">
 	   <option value="None selecteds" selected="selected">Select the year of schoole you currently at:</option>
 	   <option value="1st">Freshman</option>
@@ -54,20 +66,28 @@ function rejectFunct() {
 	   <option value="thers">Others</option>
 	 </select>
 	<br/>
-	
-	<label style="width:10%; float:left;">Intro: </label> 
-	 <textarea name="intro" id="intro" 
-	   rows="2" cols="20"  
+
+	<label style="width:10%; float:left;">Intro: </label>
+	 <textarea name="intro" id="intro"
+	   rows="2" cols="20"
 	   placeholder="Use a few words to describe yourself!"
 	   data-errormessage="Comments are Mandatory."
 	   style="width:50%;display:block" /></textarea></br>
 
 
- <input type="reset"  onClick="rejectFunct()"/> 
+ <input type="reset"  onClick="rejectFunct()"/>
  <input type="submit" onClick="handleSubmit()">
  <input type="button" value = "Back" onclick="javascript:history.go(-1)" />
 
 
 </form>
+
+<footer id="sticky">Copyright &copy; Auburn Online Resources 2017
+<div id="socialmedia">
+Alyssa Gable <a href="https://www.facebook.com/alyssa.gable"><img src="https://playfab.com/assets/img/add-ons/facebook/facebook.png" width="30px" height="20px" alt="Facebook"></img></a>
+Lu Xu <a href="https://www.facebook.com/lu.xu.94214"><img src="https://playfab.com/assets/img/add-ons/facebook/facebook.png" width="30px" height="20px" alt="Facebook"></img></a>
+Anslie Brant <a><img src="https://playfab.com/assets/img/add-ons/facebook/facebook.png" width="30px" height="20px" alt="Facebook"></img></a>
+</div>
+</footer>
 </body>
 </html>
