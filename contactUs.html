@@ -6,8 +6,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" cntent="width=device-width, initial-scale=1">
-	<title>Welcome</title>
+	<title>Contact Us</title>
 	<link href="css/default.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -22,10 +23,77 @@
 			<a href="index.html">Home</a>
 		  </div>
 	</header>
+	
+	<body>
+	
+	<h1><center> Contact Us </center></h1>
+	<br>
+	
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>	
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+    <label for="country">Class</label>
+    <select id="country" name="country">
+      <option value="freshman">Freshman</option>
+      <option value="sophomore">Sophomore</option>
+      <option value="junior">Junior</option>
+	  <option value="senior">Senior</option>
+	  <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Tell us!</label>
+    <textarea id="subject" name="subject" placeholder="Your thoughts and/or concerns.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+	
+	</body>
+	
+	
+	
 	<footer id="sticky">Copyright &copy; Auburn Online Resources 2017
 	<div id="socialmedia">
 	Alyssa Gable <a href="https://www.facebook.com/alyssa.gable"><img src="https://playfab.com/assets/img/add-ons/facebook/facebook.png" width="30px" height="20px" alt="Facebook"></img></a>
 	Lu Xu <a href="https://www.facebook.com/lu.xu.94214"><img src="https://playfab.com/assets/img/add-ons/facebook/facebook.png" width="30px" height="20px" alt="Facebook"></img></a>
-	Anslie Brant <a><img src="https://playfab.com/assets/img/add-ons/facebook/facebook.png" width="30px" height="20px" alt="Facebook"></img></a>
+	Anslie Brant <a href="https://www.facebook.com/anslie.brant"><img src="https://playfab.com/assets/img/add-ons/facebook/facebook.png" width="30px" height="20px" alt="Facebook"></img></a>
 	</div>
 	</footer>
