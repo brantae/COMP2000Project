@@ -1,6 +1,5 @@
 html, body {
   padding:0;
-  margin-bottom: 1000px;
   height:100%;
 }
 .topnav {
@@ -78,10 +77,9 @@ html, body {
 	}
 
   }
-  
+
 
   picture {border 10 px;
-	  
-	  
-  }
 
+
+  }
